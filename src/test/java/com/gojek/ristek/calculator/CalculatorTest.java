@@ -12,4 +12,12 @@ public class CalculatorTest {
         int expected = 4;
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void shouldReturnCorrectResultWhenSubtractTwoValues() {
+        Calculator calculator = new Calculator();
+        int result = calculator.subtract(1, 3);
+        int expected = -2;
+        assertEquals(expected, result);
+    }
 }
